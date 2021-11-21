@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faDiscord, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { LearnMore } from "../../elements/Button";
-import HomeHero from "./HomeStyles";
+import { HomeHero, homeImg } from "./HomeStyles";
 
 
 const Home = () => {
@@ -15,10 +15,10 @@ const Home = () => {
                     <Col className="hero-text" lg={12}>
                         <h1 className="text-white">A Lord of the Rings inspired MetaVerse.</h1>
                         <Container className="icons-container">
-                            <FontAwesomeIcon className="icon-social" icon={faDiscord} color="gold" /> 
-                            <FontAwesomeIcon className="icon-social" icon={faTwitter} color="gold" /> 
-                            <FontAwesomeIcon className="icon-social" icon={faInstagram} color="gold" /> 
-                            <FontAwesomeIcon className="icon-social" icon={faGithub} color="gold" /> 
+                            <FontAwesomeIcon className="icon-social" icon={faDiscord} color="gold" />
+                            <FontAwesomeIcon className="icon-social" icon={faTwitter} color="gold" />
+                            <FontAwesomeIcon className="icon-social" icon={faInstagram} color="gold" />
+                            <FontAwesomeIcon className="icon-social" icon={faGithub} color="gold" />
                         </Container>
                         <LearnMore as={Link} primary to="contact" >
                             Learn More
@@ -27,9 +27,9 @@ const Home = () => {
                 </Row>
             </HomeHero>
             <div className="about-section">
-                <Row className="my-5"> 
+                <Row className="my-5">
                     <Col lg={6}>
-                        <Image fluid src="https://via.placeholder.com/560" className="img-fluid" />
+                        <Image fluid src={homeImg.star} className="img-fluid" />
                     </Col>
                     <Col lg={6}>
                         <h2>About TokenVerse</h2>
@@ -38,24 +38,24 @@ const Home = () => {
                 </Row>
                 <Row className="my-5">
                     <Col lg={4}>
-                        <Image fluid src="https://via.placeholder.com/120" className="img-fluid" />
+                        <Image fluid src={homeImg.binance} className="img-fluid" />
                         <p>Crypto currency, NFT’s, and an experience built on the Binance Smart Chain.</p>
                     </Col>
                     <Col lg={4}>
-                        <Image fluid src="https://via.placeholder.com/120" className="img-fluid" />
+                        <Image fluid src={homeImg.unreal} className="img-fluid" />
                         <p>A Lord of the Rings inspired virtual experience developed with Unreal Engine.</p>
                     </Col>
                     <Col lg={4}>
-                        <Image fluid src="https://via.placeholder.com/120" className="img-fluid" />
+                        <Image fluid src={homeImg.yohdev} className="img-fluid" />
                         <p>YohDev is a forward thinking development team based in Winston-Salem North Carolina.</p>
                     </Col>
 
                 </Row>
             </div>
             <div className="vision-section bg-dark">
-                <Row className="my-5"> 
+                <Row className="my-5">
                     <Col lg={6}>
-                        <Image fluid src="https://via.placeholder.com/560" className="img-fluid" />
+                        <Image fluid src={homeImg.vrGuy} className="img-fluid" />
                     </Col>
                     <Col lg={6} className="text-white">
                         <h2>About TokenVerse</h2>
