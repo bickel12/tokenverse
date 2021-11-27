@@ -10,8 +10,9 @@ const LearnMore = styled(Button)`
     font: normal normal normal 32px/39px Aladin;
     letter-spacing: 0px;
     color: #0F0F0F;
-    padding: 10px 48px;
+    padding: 8px 56px;
     text-decoration: none;
+    
 
 `
 
